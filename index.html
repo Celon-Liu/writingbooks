@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WritingBooks 技术支持</title>
+<meta name="description" content="WritingBooks：在一本真正的书上写作。使用帮助、常见问题与联系方式。">
+<style>
+  :root {
+    --paper: #f5f0e6; --card: #fffdf8; --ink: #2a241e; --soft: #6f6558; --faint: #a39888;
+    --line: rgba(60, 44, 28, 0.14); --red: #b0392b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #16171f; --card: #1f2029; --ink: #ece4d6; --soft: #b3a998; --faint: #7d7668; --line: rgba(255, 240, 214, 0.12); --red: #c9483a; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 16px/1.85 -apple-system, "PingFang SC", "Helvetica Neue", sans-serif;
+  }
+  .mark {
+    position: absolute; top: 0; left: max(16px, calc(50% - 360px)); width: 18px; height: 88px; background: var(--red);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 86%, 0 100%);
+  }
+  main { position: relative; max-width: 720px; margin: 0 auto; padding: 64px 16px 80px; }
+  header { padding-left: 38px; margin-bottom: 40px; }
+  h1 { margin: 0; font: 400 34px/1.2 "Iowan Old Style", Georgia, serif; letter-spacing: .16em; }
+  .sub { margin: 10px 0 0; color: var(--soft); letter-spacing: .3em; font-size: 14px; }
+  nav { margin-top: 18px; font-size: 14px; }
+  nav a { color: var(--red); text-decoration: none; margin-right: 18px; }
+  h2 {
+    font: 500 20px/1.4 "Songti SC", "STSong", serif; letter-spacing: .08em;
+    margin: 48px 0 14px; padding-top: 18px; border-top: 1px solid var(--line);
+  }
+  h3 { font-size: 16px; margin: 22px 0 4px; }
+  p, li { margin: 6px 0; }
+  .soft { color: var(--soft); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; margin: 16px 0; }
+  kbd {
+    font: 13px/1 "SF Mono", Menlo, monospace; background: var(--card); border: 1px solid var(--line);
+    border-radius: 5px; padding: 2px 6px; white-space: nowrap;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  td { padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  td:first-child { width: 7.5em; white-space: nowrap; }
+  a { color: var(--red); }
+  footer { margin-top: 64px; color: var(--faint); font-size: 13px; }
+  @media (max-width: 520px) { h1 { font-size: 27px; } header { padding-left: 30px; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark" aria-hidden="true"></div>
+  <header>
+    <h1>WritingBooks</h1>
+    <p class="sub">在一本真正的书上写作 · 技术支持</p>
+    <nav><a href="#faq">常见问题</a><a href="#backup">备份与换电脑</a><a href="#keys">快捷键</a><a href="#contact">联系我们</a><a href="privacy.html">隐私政策</a></nav>
+  </header>
+
+  <p>WritingBooks 是一款 Mac 上的写作软件：书架上一本本真正的书，书页像印刷品一样分页排版。它完全离线工作，你写下的一切都只保存在自己的 Mac 上。</p>
+  <p class="soft">系统要求：macOS 12 或更高版本。</p>
+
+  <h2 id="faq">常见问题</h2>
+
+  <h3>怎么开始写第一本书？</h3>
+  <p>在书架上点「新的书或相册」，或按 <kbd>⌘N</kbd>。选好装帧和布面，点「装订成书」，书会从书架上翻开，直接在书页上写就行。</p>
+
+  <h3>怎么分章节？</h3>
+  <p>在一行开头输入 <kbd>#</kbd> 加空格，或把光标放在那一行按 <kbd>⌥⌘1</kbd>，这一行就成为章节标题，并从新的一页开始。<kbd>⌥⌘T</kbd> 打开目录。</p>
+
+  <h3>文字会自动保存吗？误删了怎么找回？</h3>
+  <p>会自动保存，旧版本也会自动留下。刚删掉的先试 <kbd>⌘Z</kbd>；时间久了，打开菜单「书 → 浏览所有版本…」，或在那一段按 <kbd>⌥⌘H</kbd> 查看这一段的历史。</p>
+
+  <h3>能导入 Word 或 Pages 文稿吗？</h3>
+  <p>可以导入 Word（.docx）、纯文本（.txt）和 Markdown（<kbd>⌘O</kbd>），每个文件成为一本书，章节会自动识别。Pages 文稿请先在 Pages 里选择「文件 → 导出为 → Word」，再导入。</p>
+
+  <h3>能导出成什么格式？</h3>
+  <p>PDF（<kbd>⇧⌘E</kbd>，按书页原样排版）、Word（<kbd>⇧⌘D</kbd>）、Markdown 和纯文本，也可以直接打印（<kbd>⌘P</kbd>）。相册可以导出 PDF，或把每一页导出为 JPG 图片。</p>
+
+  <h3>打字机模式怎么用？</h3>
+  <p>在书里按 <kbd>⇧⌘F</kbd> 或点顶栏的「打字机」，只留下正在写的那一行。<kbd>⇧⌘K</kbd> 可以只留纸张、隐藏打字机，按 <kbd>Esc</kbd> 退出。</p>
+
+  <h3>怎么换背景、夜读和书页风格？</h3>
+  <p>点顶栏的「环境」：外观（跟随系统、浅色、深色）、窗口材质、书页风格（经典或简约）、纸张颜色、动态背景与天色，都在这里。背景选「跟随环境声」时，打开雨声，窗外就会下雨。</p>
+
+  <h3>启动时的「每日一句」可以关掉吗？</h3>
+  <p>可以。在「环境」里把「每日一句」设为「不显示」。启动时点一下或按任意键，也能直接跳过。</p>
+
+  <h3>每日目标和写作日历在哪里？</h3>
+  <p>书的顶栏右侧有一个进度环，点它设置每日目标、打开写作日历（<kbd>⌥⌘Y</kbd>）。字数按每天新写的字计算，跨所有书累计；修改或删除不会让当天的字数倒退。</p>
+
+  <h3>需要联网或注册账号吗？</h3>
+  <p>不需要。WritingBooks 不联网、没有账号，所有功能离线可用，环境声也是在本机实时合成的。</p>
+
+  <h2 id="backup">备份与换电脑</h2>
+  <div class="card">
+    <p>1. 在旧电脑上选择菜单「书 → 导出全部数据（换电脑用）…」，得到一个 .zip 数据包，里面有所有的书、相册和外观设置。</p>
+    <p>2. 用 U 盘、隔空投送或网盘，把数据包拷到新电脑。</p>
+    <p>3. 在新电脑上安装 WritingBooks，选择菜单「书 → 导入数据包…」，选这个 zip。新电脑上原有的内容不会被删除，会改名保留。</p>
+  </div>
+  <p class="soft">平时也可以定期导出一份数据包，放进 iCloud 云盘或移动硬盘，当作备份。删除 App 之前，也请先导出一份。</p>
+
+  <h2 id="keys">常用快捷键</h2>
+  <table>
+    <tr><td><kbd>⌘N</kbd></td><td>新建书</td></tr>
+    <tr><td><kbd>⇧⌘N</kbd></td><td>新建相册</td></tr>
+    <tr><td><kbd>⌥⌘1</kbd> / <kbd>⌥⌘0</kbd></td><td>设为章节标题 / 正文</td></tr>
+    <tr><td><kbd>⌥⌘T</kbd></td><td>目录</td></tr>
+    <tr><td><kbd>⌘←</kbd> <kbd>⌘→</kbd></td><td>翻页</td></tr>
+    <tr><td><kbd>⌘J</kbd></td><td>跳到页码</td></tr>
+    <tr><td><kbd>⌘F</kbd> / <kbd>⌥⌘F</kbd></td><td>查找 / 查找与替换</td></tr>
+    <tr><td><kbd>⌥⌘M</kbd></td><td>添加批注</td></tr>
+    <tr><td><kbd>⇧⌘R</kbd></td><td>开始 / 结束修订</td></tr>
+    <tr><td><kbd>⇧⌘I</kbd></td><td>插入图片或视频</td></tr>
+    <tr><td><kbd>⇧⌘F</kbd></td><td>打字机专注模式</td></tr>
+    <tr><td><kbd>⌥⌘P</kbd></td><td>音乐与环境声</td></tr>
+    <tr><td><kbd>⇧⌘E</kbd></td><td>导出 PDF</td></tr>
+  </table>
+
+  <h2 id="contact">联系我们</h2>
+  <p>遇到问题或有建议，欢迎来信：<a href="mailto:liuxilong1919@163.com">liuxilong1919@163.com</a></p>
+  <p class="soft">来信时附上 macOS 版本、WritingBooks 版本（菜单「WritingBooks → 关于 WritingBooks」）和问题的截图，能更快帮你解决。我们会在 3 个工作日内回复。</p>
+
+  <footer>© 2026 Xilong Liu · <a href="privacy.html">隐私政策</a></footer>
+</main>
+</body>
+</html>
